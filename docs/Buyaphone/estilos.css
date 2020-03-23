@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Jaldi', sans-serif; 
+}
+
+/*SECCION "HEADER"*/
+header .contenedor{
+     display: flex;
+    justify-content: space-between;
+}
+p.logo, h1,.logoP{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: #121121;
+    margin: 20px 15px;
+}
+p.logo, .logoP{
+    font-size: 35px;
+    font-weight: normal;
+}
+h1{
+    font-size: 65px;
+    margin-top: 35px;
+    color:#121121;
+}
+h2{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+header a, #metodos a, #lo-mas-vendido a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+header ul{
+    display: flex;
+    margin-top: 25px;
+}
+header ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+nav ul li a{
+    color:#fff;
+}
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+#contenedor-titulo{
+    display: flex;
+    justify-content: center;
+    margin: 17vh 0;
+    max-width: 1580px; 
+    width: 100%;
+    text-align: center;
+}
+.headerindex{
+  background:linear-gradient(rgba(10,100,140,.75),rgba(35,150,200,.10)), url(images/fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.headernoindex{
+    background:linear-gradient(rgba(10,100,140,.75),rgba(35,150,200,.10)), url(images/fondo2.jpg);
+    background-size: cover;
+    height: 47vh;
+}
+.headernoindex2{
+    background:linear-gradient(rgba(10,100,140,.75),rgba(35,150,200,.10)), url(images/fondo3.jpg);
+    background-size: cover;
+    height: 47vh;
+}
+.headernoindex3{
+    background:linear-gradient(rgba(10,100,140,.75),rgba(35,150,200,.10)), url(images/fondo4.jpg);
+    background-size: cover;
+    height: 47vh;
+}
+.headernoindex4{
+    background:linear-gradient(rgba(10,100,140,.75),rgba(35,150,200,.10)), url(images/fondo5.jpg);
+    background-size: cover;
+    height: 47vh;
+}
+.headernoindex5{
+    height: 12vh;
+    padding-top: 20px;
+}
+.headernoindex5 nav{
+    margin-top: -20px;
+}
+.headernoindex h1,.headernoindex2 h1,.headernoindex3 h1,.headernoindex4 h1{
+    color: #fff;
+}
+.contenedor-titulo a, #lo-mas-vendido a, #metodos a, #registro input[type="submit"], #metods a{
+    border-radius: 20px;
+    font-size: 17px;
+    color: #fff;
+    background: #121121;
+    padding: 10px 12px;
+    margin-top: 10px;
+    width: auto;
+    display: inline-block;
+    
+}
+
+/*SECCION "LO MAS VENDIDO*/
+#lo-mas-vendido img, #metodos img, #product-ind img{
+    width: 450px;
+    padding:20px;
+    /*filter:drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5)); */
+}
+h3{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 75px;
+    margin-bottom: -10px;
+}
+#lo-mas-vendido .contenedor-masvendido, #porfile .container-porfile, #shopping .container-table, #metods, #product-ind .contenedor-prod{
+    display: flex;
+    justify-content: space-around;
+    padding:30px;
+    font-size: 22px;
+    line-height:25px;
+    text-align: center;
+}
+#lo-mas-vendido .texto,#product-ind .texto-producto{
+    width: 45%;
+}
+
+/*SECCION "METODOS*/
+.contenedor-metodos, .contenedor-prod{
+    display: flex;
+    flex-wrap: wrap;
+}
+#metodos img{
+    margin: 10px;
+}
+#metodos .metodimg{  
+  margin-bottom: 40px;  
+}
+#metodos .item{
+    width: 50%;
+    text-align: center;
+}
+ul li{
+    list-style: none;
+}
+#metodos ul li:nth-child(2),#contactos ul li:nth-child(2) {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#metodos ul li:nth-child(3),#contactos ul li:nth-child(3) {
+    line-height: 25px;
+    font-weight: bold;
+    margin:0 15px;
+}
+/*SECCION "FOOTER*/
+footer{
+    background: #121121;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;   
+}
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer img{
+    margin: 0 40px;
+    transform: rotate(0);
+    transition: 0.5s;
+    width:65px;
+}
+footer img:hover{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+footer p{
+    color: #fff;
+    margin-top: 40px;
+    font-family: 'Jaldi', sans-serif;
+}
+
+/*FORMULARIO REGISTRO*/
+.registrofont{
+ background:linear-gradient(rgba(10,100,140,.10),rgba(35,150,200,.50)), url(images/fondo2.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+footer.pieregistro{
+    padding:25px;;
+    margin-top:0; 
+}
+footer.pieregristro img{
+    margin-top: 10px;
+    width:50px;
+}
+#registro p{
+    font-family: 'Sedgwick Ave Display', cursive;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+#registro form{
+    display:block;
+    text-align: center;
+    margin: 50px auto;
+    padding-top: 45px;
+    width: 45%;
+    box-shadow: 5px 15px 15px -1px;
+    color: #121121;
+    background-color: #fff;
+    border-radius: 10px;
+}
+input{
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #121121;
+    font-size: 15px;
+}
+textarea{
+    padding: 15px 0;
+    border: 0;
+    border-bottom: 1px solid #32a073;
+    margin-bottom: 40px;
+    font-size: 15px;
+    width: 100%;
+}
+
+/*SECCION "CONTACTANOS"*/
+#contactos{
+    display: flex;
+    margin-bottom: 100px;
+}
+#contactos div{
+     display: inline-block;
+     text-align:center;
+}
+#contactos ul{
+    padding: 0 15px;
+    margin: 0 20px;
+}
+#contactos img {
+    width: 175px;
+    padding:20px;
+}
+
+/*SECCION "PERFIL"*/
+
+#porfile img{
+    width: 250px;
+    padding:10px;
+    filter:drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+}
+.photo{
+        border-radius: 750px;
+}
+.photo-porfile{
+     border-radius: 15px;
+    background:linear-gradient(rgba(10,100,140,.10),rgba(35,150,200,.50)), url(images/fondo.jpg);
+       font-family: 'Sedgwick Ave Display', cursive;
+    color: #fff;
+    
+}
+.deseos{
+    color: #fff;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 17px;
+    border-radius: 15px;
+    text-align: center;
+    background:linear-gradient(rgba(10,100,140,.10),rgba(35,150,200,.50)), url(images/fondo.jpg);
+}
+#porfile .texto{
+    margin-top: 50px;
+    width: auto;
+    text-align:justify;
+     line-height: 30px;
+}
+#porfile a{
+    text-decoration: none;
+    font-weight:bold;
+    color: #000;
+}
+
+/*SECCION "CAR"*/
+h3.font {
+    font-family: 'Sedgwick Ave Display', cursive;
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+#shopping img{
+    width: 350px;
+}
+#shopping .table{
+    display: inline-block;
+}
+select {
+    font-family: 'Jaldi', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;    
+    width: 150px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 7px;
+    margin-right: 25px;
+}
+.table {
+    display: flex;
+    margin-top: 25px;
+}
+.table-buy {
+margin-top: 25px;
+}
+
+/*PRODUCTOS*/
+.texto-producto {
+    padding-top: 75px;
+}
+button{
+    font-family: 'Sedgwick Ave Display', cursive;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #fff;
+    text-align:;
+    background:#121121;
+    padding:0;
+    margin: 0;
+    width: auto;  
+}
+img.imgbutton {
+    width: 50px !important;
+    padding: 2px 10px!important;
+}
+
