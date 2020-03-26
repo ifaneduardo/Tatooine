@@ -1,12 +1,29 @@
-* {
-  box-sizing: border-box;
+#btn-menu{
+    display: none;
 }
+img.responsivemenu{
+    width: 50px;
+}
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 0 solid #fff;
+}
+header label:hover{
+    cursor: pointer;
+}
+
 body{
     margin: 0;
     font-family: 'Jaldi', sans-serif; 
 }
 
 /*SECCION "HEADER"*/
+header{
+    width: 100%;
+}
 header .contenedor{
      display: flex;
     justify-content: space-between;
@@ -47,13 +64,15 @@ header ul li{
 }
 nav ul li a{
     color:#fff;
+    display: block;
+    
 }
 .contenedor{
     max-width: 1280px;
     width: 90%;
     margin: auto;
 }
-#contenedor-titulo{
+#contenedor-titulo, #contenedor-tituloindex{
     display: flex;
     justify-content: center;
     margin: 17vh 0;
@@ -86,7 +105,7 @@ nav ul li a{
     background-size: cover;
     height: 47vh;
 }
-.headernoindex5{
+.headernoindex5, .headernoindex5-1{
     height: 12vh;
     padding-top: 20px;
 }
@@ -96,7 +115,7 @@ nav ul li a{
 .headernoindex h1,.headernoindex2 h1,.headernoindex3 h1,.headernoindex4 h1{
     color: #fff;
 }
-.contenedor-titulo a, #lo-mas-vendido a, #metodos a, #registro input[type="submit"], #metods a{
+.contenedor-titulo a, #lo-mas-vendido a, #metodos a, #registro input[type="submit"], #metods a, a.index{
     border-radius: 20px;
     font-size: 17px;
     color: #fff;
@@ -338,7 +357,6 @@ button{
     border-radius: 12px;
     font-size: 20px;
     color: #fff;
-    text-align:;
     background:#121121;
     padding:0;
     margin: 0;
@@ -349,3 +367,148 @@ img.imgbutton {
     padding: 2px 10px!important;
 }
 
+/*Responsive*/
+@media (max-width:850px){
+    header label {
+        display:block;
+        margin-bottom: 5px;
+    }
+    header .contenedor {
+    display: inline-block;
+    justify-content: space-between;
+}
+    nav {
+    margin-left: 35px;
+    margin-bottom:35px;
+    line-height: 25px;
+    }
+    p.logo, a.logoP {
+    color: #fff;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+    .menu {
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+        background: rgba(0,0,0,0.50);
+        position: absolute;
+        width: 41%;
+        height: 205px;
+        margin-left: -70%;
+        transition: all 0.35s;
+    }
+    .menu ul{
+        flex-direction: column;
+   
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    #registro form{
+        width: 60%;
+    }
+    #porfile .texto {
+    margin-top: 15px;
+    margin-left: 5px;       
+}
+    h3 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+    h1 {
+    font-size: 60px;
+    margin-top: 15px;
+    }
+    #lo-mas-vendido img{
+        width: 315px;
+        padding-top: 75px;
+    }
+    #porfile img {
+        width: 215px;
+        border-radius: 35px;
+    }
+    #metodos img{
+    width: 275px;
+    padding: 5px;
+    margin-top: 50px
+    }
+    #contactos div {
+    display: flow-root;
+    }
+    #contactos ul li:nth-child(2) {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    }
+    .headernoindex, .headernoindex2, .headernoindex3, .headernoindex4, .headernoindex5{
+height: 42vh;
+    }
+    .registrofont{
+        height: 100vh;
+    }
+    #registro form {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 70%;
+    border-radius: 45px;
+}
+    #contenedor-titulo{
+        display: block;
+        text-align: right;
+    }
+    #contenedor-tituloindex{
+        text-align: center;
+    }
+    .deseos {
+    font-size: 18px;
+    line-height: 15px;
+}
+    #product-ind img {
+    width: 250px;
+    }
+    #product-ind .contenedor-prod{
+    padding: 20px;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+}
+ .texto-producto {
+    padding-top: 5px;
+}   
+    #lo-mas-vendido .contenedor-masvendido{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    }
+    #lo-mas-vendido .texto {
+    width: 100%;
+    }
+.photo-porfile {
+    margin-top: 20px;
+    height: 10%;
+}
+    #porfile .container-porfile{
+    display: contents;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: center
+    }
+    #shopping img {
+    width: 220px;
+}
+    #metods{
+        display: grid;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+    #metodos .item {
+    text-align: center;
+    display: contents;
+    }
+}
