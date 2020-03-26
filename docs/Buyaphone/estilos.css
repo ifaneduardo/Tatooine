@@ -1,3 +1,11 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
 #btn-menu{
     display: none;
 }
@@ -377,30 +385,43 @@ img.imgbutton {
     display: inline-block;
     justify-content: space-between;
 }
+    header .a{
+        font-size: 19px;
+    }
     nav {
     margin-left: 35px;
     margin-bottom:35px;
     line-height: 25px;
     }
     p.logo, a.logoP {
-    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    color: #EEECE2;
     margin-right: 20px;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-bottom: 10px;
+}
+    p {
+    text-align: center;
 }
     .menu {
         border-bottom-right-radius: 25px;
         border-top-right-radius: 25px;
         background: rgba(0,0,0,0.50);
         position: absolute;
-        width: 41%;
-        height: 205px;
+        width: 63%;
+        height: 213px;
         margin-left: -70%;
         transition: all 0.35s;
     }
     .menu ul{
         flex-direction: column;
    
+    }
+    header ul {
+    display: flex;
+    margin-top: 10px;
+    line-height: 35px;
     }
     #btn-menu:checked ~ .menu {
         margin: 0;
@@ -418,11 +439,11 @@ img.imgbutton {
     margin-bottom: -10px;
 }
     h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 15px;
     }
     #lo-mas-vendido img{
-        width: 315px;
+        width: 310px;
         padding-top: 75px;
     }
     #porfile img {
@@ -445,18 +466,23 @@ img.imgbutton {
     .headernoindex, .headernoindex2, .headernoindex3, .headernoindex4, .headernoindex5{
 height: 42vh;
     }
+    #registro p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    }
     .registrofont{
         height: 100vh;
     }
     #registro form {
     margin: 0 auto;
     padding-top: 30px;
-    width: 70%;
+    width: 95%;
     border-radius: 45px;
 }
     #contenedor-titulo{
         display: block;
-        text-align: right;
     }
     #contenedor-tituloindex{
         text-align: center;
@@ -479,12 +505,16 @@ height: 42vh;
 }   
     #lo-mas-vendido .contenedor-masvendido{
     display: inline-block;
+    padding:0;
+    margin: 0;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
     }
     #lo-mas-vendido .texto {
-    width: 100%;
+    width: 95%;
+    text-align: center;
+    
     }
 .photo-porfile {
     margin-top: 20px;
@@ -499,6 +529,16 @@ height: 42vh;
     #shopping img {
     width: 220px;
 }
+    #shopping .container-table{
+    display: flow-root;
+    }
+    .table-buy {
+    margin-top: 50px;
+}
+    .table {
+    display: block;
+    margin-top: 25px;
+}
     #metods{
         display: grid;
     justify-content: space-around;
@@ -511,4 +551,11 @@ height: 42vh;
     text-align: center;
     display: contents;
     }
+    footer img {
+    margin: 0 15px;
+    transform: rotate(0);
+    transition: 0.5s;
+    width: 35px;
+}
+    
 }
